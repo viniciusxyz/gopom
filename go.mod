@@ -1,4 +1,4 @@
-module github.com/vifraa/gopom
+module github.com/viniciusxyz/gopom
 
 go 1.15
 
