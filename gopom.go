@@ -58,6 +58,7 @@ type Project struct {
 	IssueManagement        IssueManagement        `xml:"issueManagement,omitempty"`
 	CIManagement           CIManagement           `xml:"ciManagement,omitempty"`
 	DistributionManagement DistributionManagement `xml:"distributionManagement,omitempty"`
+	Properties             Properties             `xml:"properties,omitempty"`
 	DependencyManagement   DependencyManagement   `xml:"dependencyManagement,omitempty"`
 	Dependencies           []Dependency           `xml:"dependencies>dependency,omitempty"`
 	Repositories           []Repository           `xml:"repositories>repository,omitempty"`
@@ -65,7 +66,6 @@ type Project struct {
 	Build                  Build                  `xml:"build,omitempty"`
 	Reporting              Reporting              `xml:"reporting,omitempty"`
 	Profiles               []Profile              `xml:"profiles>profile,omitempty"`
-	Properties             Properties             `xml:"properties,omitempty"`
 }
 
 type Properties struct {
